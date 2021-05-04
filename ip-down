@@ -9,5 +9,5 @@ fi
 
 for route in ${ROUTES[*]} ;
 do
-  /sbin/route delete -net $route -interface $IFNAME;
+  /sbin/route delete -net "$route" -interface "$IFNAME";
 done

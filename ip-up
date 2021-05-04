@@ -9,5 +9,5 @@ fi
 
 for route in ${ROUTES[*]} ;
 do
-  /sbin/route add -net $route -interface $IFNAME;
+  /sbin/route add -net "$route" -interface "$IFNAME";
 done
