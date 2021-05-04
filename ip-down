@@ -7,7 +7,7 @@ if [ "$REMOTE_IP" != "$IPREMOTE" ]; then
   exit;
 fi
 
-for route in $ROUTES
+for route in ${ROUTES[*]} ;
 do
   /sbin/route delete -net $route -interface $IFNAME;
 done
