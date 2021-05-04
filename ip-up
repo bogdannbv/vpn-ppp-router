@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Due to the restricted environment, this has to be an absolute path.
+source /etc/ppp/ip.config
+
+if [ "$REMOTE_IP" != "$IPREMOTE" ]; then
+  exit;
+fi
+
+for route in $ROUTES
+do
+  /sbin/route add -net $route -interface $IFNAME;
+done

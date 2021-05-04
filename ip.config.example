@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# The remote IP address, used for matching the routes with the proper interface.
+# Replace it with your own.
+REMOTE_IP=10.0.0.1
+
+ROUTES=(
+  # Example Cloudflare IP ranges (https://www.cloudflare.com/ips).
+  # Replace them depending on your needs.
+  "103.21.244.0/22"
+  "103.22.200.0/22"
+  "103.31.4.0/22"
+)
