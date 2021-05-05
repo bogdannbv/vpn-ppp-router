@@ -63,8 +63,8 @@ sudo chmod 755 /etc/ppp/ip-up /etc/ppp/ip-down
 ```
 
 ## Trying it out
-If everything went well, after reconnecting/connecting to your VPN all the traffic to the IPs or IP ranges configured in your `ip.config` \
-should be going through your `PPP` interface.
+If everything went well, after reconnecting/connecting to your VPN all the traffic to the IP ranges configured in `ip.config`
+should be routed through your `PPP` interface.
 
 To test if the routes were added correctly you can run the following command:
 ```shell
